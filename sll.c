@@ -78,6 +78,23 @@ void delete(int key) {
         free(temp1);
     }
 }
+void display(struct Node* head) {
+    struct Node* temp = head;
+
+    if (head == NULL) {
+        printf("List is Empty\n");
+        return;
+    }
+
+    printf("Linked List Elements are:\n");
+
+    while (temp != NULL) {
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+
+    printf("NULL\n");
+}
 void count()
 {
     if(head==NULL)
