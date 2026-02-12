@@ -54,22 +54,6 @@ void insertmid(int x, int key) {
         temp->next = new;
     }
 }
-
-void display() {
-    if (head == NULL) {
-        printf("There is nothing to print\n");
-    } else {
-        temp = head;
-        printf("The list is:\n");
-        while (temp != NULL) {
-            printf("%d\n", temp->data);
-            temp = temp->next;
-        }
-    }
-}
-
-
-
 void delete(int key) {
     if (head == NULL) {
         printf("Deletion not possible since no elements\n");
