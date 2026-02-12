@@ -94,11 +94,6 @@ void count()
         printf("count: %d",count);
     }
 }
-void search(int x)
-{
-    
-}
-
 int main() {
     insertbeg(12);
     display();
